@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grin MW</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.7.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/cyborg/bulmaswatch.min.css">
+
+    <style type="text/css">
+        html,
+        body {
+            font-family: 'Josefin Sans';
+            background-color: #1f2f26;
+            }
+        img {
+            padding: 5px;
+            }
+        .navbar-item img {
+          max-height: 4rem;
+          height: 4rem;
+        }
+
+        .title {
+            font-family: 'Abril Fatface';
+        }
+
+        /*setting the size of the description icons under the hero*/
+        .dots .column img {
+            margin-top: -10px;
+            height: 5rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /*fixing margins*/
+        .content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
+          margin-bottom: .1em;
+        }
+
+        /*size of logo image for patron companies*/
+        .level .level-item img {
+          height: 2.5rem;
+          margin: .2rem;
+        }
+
+        /*size of private funding contributors names*/
+        .names .level-item {
+          font-size: 1.5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- HERO -->
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                          <img src="media/grin_mw_logo.svg" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+                        <span></span>
+                        <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <!-- <li class="is-active"><a>Home</a></li> -->
+                                    <li><a href="">Examples</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column is-5">
+                            <img src="media/grin_mw_distort.svg" alt="Description">
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <br><h1 class="title is-2" style="margin-bottom: 2rem;">
+                            Meet Grin
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            the private & scalable<br> mimblewimble blockchain 
+                        </h2>
+                        <br>
+                        <p class="has-text-centered" style="margin-top: -1rem;">
+                            <a class="button is-medium is-warning is-outlined">
+                              What's Mimblewimble?
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            <!-- CTA BOX -->
+            <div class="box cta">
+                <p class="has-text-centered">
+                    <span class="tag is-warning">
+                      Currently Live: Testnet 4
+                    </span> 
+                    <span href="#" style="margin-left: 10px;">
+                      Grin is under development. Launch planned for early 2019.
+                    </span>
+                </p>
+            </div>
+            <!-- // CTA BOX -->
+        </div>
+    </section>
+    <!-- //HERO -->
+
+    <!-- BODY -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-10 is-offset-1">
+            <div class="content">
+
+              <!-- HEADER -->
+              <section>
+                <h1 class="title is-1">
+                  What's Grin?
+                </h1><br>
+                <h2 class="subtitle">
+                  Grin builds electronic transactions for all, without censorship or restrictions.
+                </h2>
+                <p>
+                  Grin empowers anyone to transact or save modern money without the fear of external control or oppression. Grin is designed for the decades to come, not just tomorrow. Grin wants be usable by everyone, regardless of borders, culture, skills or access.
+                </p>
+              </section>
+              <!-- //HEADER  -->
+
+              <br><br>
+
+              <!-- DESCRIPTION DOTS -->
+              <section class="columns dots">
+                
+                <!-- DOT -->
+                <div class="column">
+                  <p class="subtitle is-3">
+                    <img src="media/privacy.svg">
+                    Private
+                  </p>
+                  <span>
+                    Grin has no amounts and no addresses. Transactions are additionally obscured. To hide where a newly created transaction comes from, it gets relayed privately (a "random walk") among peers before it is publicly announced.
+                  </span>
+                </div>
+                <!-- //DOT -->
+
+                <!-- DOT -->
+                <div class="column">
+                  <p class="subtitle is-3">
+                    <img src="media/scale.svg">
+                    Scalable
+                  </p>
+                  <span>
+                    MimbleWimble leverages cryptography to allow most of the blockchain data to be removed. In particular, nearly all past transaction data is pruned.
+                  </span>
+                </div>
+                <!-- //DOT -->
+
+                <!-- DOT -->
+                <div class="column">
+                  <p class="subtitle is-3">
+                    <img src="media/nodes.svg">
+                    Decentralized
+                  </p>
+                  <span>
+                    Grin is developed openly, by open source developers based in different countries. It's not controlled by any company, foundation or individual. The coin distribution is designed to be as fair (but not gratis) as is known to be possible.
+                  </span>
+                </div>
+                <!-- //DOT -->
+              </section>
+              <!-- //DESCRIPTION DOTS -->
+
+              <br><br>              
+
+              <!-- FUNDING -->
+              <section>
+                <h2 class="title is-1">
+                  Funding
+                </h2><br>
+                <p class="subtitle is-4">
+                  Grin is launched fairly, free of ICO, pre-mine or founder’s reward. We rely on donations to keep working on the project. If you have the means, we humbly ask you to please donate.
+                </p><br>
+                <a href="#" class="button is-warning is-large" style="float: right;">Donate Now</a>
+              </section><br><br>
+              <!-- //FUNDING -->
+
+              <br><br>  
+
+              <!-- PATRONS -->
+              <section>
+                <h2 class="title is-1">
+                  Patrons
+                </h2><br>
+
+                <!-- COMPANY PATRONS -->
+                <div>
+                  <h2 class="subtitle">
+                    Companies
+                  </h2>
+
+                  <!-- SPONSOR ROW 1 -->
+                  <div class="level is-vcentered">
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/bitonic.svg">
+                      </a>
+                    </div>
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/blockcypher.svg">
+                      </a>
+                    </div>
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/cypher_capital.png">
+                      </a>
+                    </div>
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/hashrabbit.png">
+                      </a>
+                    </div>
+                  </div>
+                  <!-- //SPONSOR ROW 1 -->
+
+                  <!-- SPONSOR ROW 2 -->
+                  <div class="level is-vcentered">
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/kr1_med.png">
+                      </a>
+                    </div>
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/kyokan.png">
+                      </a>
+                    </div>
+                    <div class="level-item">
+                      <a href="#">
+                        <img src="media/patron/tmgox.jpg">
+                      </a>
+                    </div>
+                  </div>
+                  <!-- //SPONSOR ROW 2 -->
+                </div>
+                <!-- //COMPANY PATRONS -->
+
+                <hr>
+
+                <!-- PRIVATE PATRONS -->
+                <div>
+                  <h2 class="subtitle">
+                    Private Funding Contributors
+                  </h2>
+
+                  <!-- SPONSOR ROW 3 -->
+                  <div class="level is-vcentered names">
+                    <div class="level-item">
+                      <p>
+                        Aurel
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Chris McCann 
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Jack Misteli 
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Jean-Guillaume 
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Jameson Lopp  
+                      </p>
+                    </div>
+                  </div>
+                  <!-- //SPONSOR ROW 3 -->
+
+                   <!-- SPONSOR ROW 3 -->
+                  <div class="level is-vcentered names">
+                    <div class="level-item">
+                      <p>
+                        Max Tannahill
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Michalis Kargakis 
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Redouan Ahaloui 
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Roy Blankman 
+                      </p>
+                    </div>
+                    <div class="level-item">
+                      <p>
+                        Niels de Ruiter 
+                      </p>
+                    </div>
+                  </div>
+                  <!-- //SPONSOR ROW 3 -->
+                </div>
+                <!-- //PRIVATE PATRONS -->
+
+                <hr>
+
+                <!-- ANON PATRONS -->
+                <div>
+                  <h2 class="subtitle">
+                    Anonymous Funding Contributors
+                  </h2>
+                  <p>
+                    And all our great anonymous supporters! We’re not forgetting your contribution, and are working to protect that choice!
+                  </p>
+                </div>
+                <!-- //ANON PATRONS -->
+              </section>
+              <!-- //PATRONS -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //BODY -->
+
+    <footer class="footer is-vcentered has-text-centered">
+      <ul>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Forums</a>
+        </li>
+        <li>
+          <a href="#">Github</a>
+        </li>
+      </ul>
+      <span>
+        © Grin 2018
+      </span>
+    </footer>
+</body>
+
+</html>
