@@ -1,5 +1,5 @@
 # grinhq
 designing a new website for grin-tech.org
 
-#Credits
+## Credits
 Using the Bulma.io CSS framework 
