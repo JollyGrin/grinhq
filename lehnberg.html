@@ -18,21 +18,18 @@
         html,
         body {
             font-family: 'Anonymous Pro';
-            background-color: #1f2f26;
+            /*background-color: #1f2f26;*/
             }
-        img {
-            padding: 5px;
-            }
-        .navbar-item img {
-          max-height: 4rem;
-          height: 4rem;
-        }
 
         .title {
             font-family: 'Poppins';
         }
 
-        /*setting the size of the description icons under the hero*/
+        img {
+            padding: 5px;
+            }
+
+        /*setting the size of the description icons*/
         .dots .column img {
             margin-top: -10px;
             height: 5rem;
@@ -41,9 +38,9 @@
         }
 
         /*fixing margins*/
-        .content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
+        /*.content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
           margin-bottom: .1em;
-        }
+        }*/
 
         /*size of logo image for patron companies*/
         .level .level-item img {
@@ -56,6 +53,14 @@
           font-size: 1.5rem;
         }
 
+        /*gap between sections*/
+        section .container .columns .column .content section {
+          margin-bottom: 20vh;
+        }
+
+        .patrons .patron-box {
+          margin-bottom: 10vh;
+        }
     </style>
 </head>
 
@@ -70,7 +75,8 @@
                             <img src="media/grin_mw_distort.svg" alt="Description">
                     </div>
                     <div class="column is-6 is-offset-1">
-                        <br><h1 class="title is-2" style="margin-bottom: 2rem;">
+                        <br>
+                        <h1 class="title is-2" style="margin-bottom: 2rem;">
                             Meet Grin
                         </h1>
                         <h2 class="subtitle is-4">
@@ -111,7 +117,7 @@
           <div class="column is-10 is-offset-1">
             <div class="content">
 
-              <!-- HEADER -->
+              <!-- Intro -->
               <section>
                 <h1 class="title is-1">
                   What's Grin?
@@ -122,53 +128,52 @@
                 <p>
                   Grin empowers anyone to transact or save modern money without the fear of external control or oppression. Grin is designed for the decades to come, not just tomorrow. Grin wants be usable by everyone, regardless of borders, culture, skills or access.
                 </p>
+
+                <br><br>
+
+                <!-- DESCRIPTION DOTS -->
+                <div class="columns dots">
+                  
+                  <!-- DOT -->
+                  <div class="column">
+                    <p class="title is-2">
+                      <img src="media/privacy.svg">
+                      Private
+                    </p>
+                    <span>
+                      Grin has no amounts and no addresses. Transactions are additionally obscured. To hide where a newly created transaction comes from, it gets relayed privately (a "random walk") among peers before it is publicly announced.
+                    </span>
+                  </div>
+                  <!-- //DOT -->
+
+                  <!-- DOT -->
+                  <div class="column">
+                    <p class="title is-2">
+                      <img src="media/scale.svg">
+                      Scalable
+                    </p>
+                    <span>
+                      MimbleWimble leverages cryptography to allow most of the blockchain data to be removed. In particular, nearly all past transaction data is pruned.
+                    </span>
+                  </div>
+                  <!-- //DOT -->
+
+                  <!-- DOT -->
+                  <div class="column">
+                    <p class="title is-2">
+                      <img src="media/nodes.svg">
+                      Open
+                    </p>
+                    <span>
+                      Grin is developed openly, by open source developers based in different countries. It's not controlled by any company, foundation or individual. The coin distribution is designed to be as fair (but not gratis) as is known to be possible.
+                    </span>
+                  </div>
+                  <!-- //DOT -->
+                </div>
+                <!-- //DESCRIPTION DOTS -->
               </section>
-              <!-- //HEADER  -->
+              <!-- //Intro  -->
 
-              <br><br>
-
-              <!-- DESCRIPTION DOTS -->
-              <section class="columns dots">
-                
-                <!-- DOT -->
-                <div class="column">
-                  <p class="title is-2">
-                    <img src="media/privacy.svg">
-                    Private
-                  </p>
-                  <span>
-                    Grin has no amounts and no addresses. Transactions are additionally obscured. To hide where a newly created transaction comes from, it gets relayed privately (a "random walk") among peers before it is publicly announced.
-                  </span>
-                </div>
-                <!-- //DOT -->
-
-                <!-- DOT -->
-                <div class="column">
-                  <p class="title is-2">
-                    <img src="media/scale.svg">
-                    Scalable
-                  </p>
-                  <span>
-                    MimbleWimble leverages cryptography to allow most of the blockchain data to be removed. In particular, nearly all past transaction data is pruned.
-                  </span>
-                </div>
-                <!-- //DOT -->
-
-                <!-- DOT -->
-                <div class="column">
-                  <p class="title is-2">
-                    <img src="media/nodes.svg">
-                    Open
-                  </p>
-                  <span>
-                    Grin is developed openly, by open source developers based in different countries. It's not controlled by any company, foundation or individual. The coin distribution is designed to be as fair (but not gratis) as is known to be possible.
-                  </span>
-                </div>
-                <!-- //DOT -->
-              </section>
-              <!-- //DESCRIPTION DOTS -->
-
-              <br><br>              
 
               <!-- FUNDING -->
               <section>
@@ -179,19 +184,19 @@
                   Grin is launched fairly, free of ICO, pre-mine or founder’s reward. We rely on donations to keep working on the project. If you have the means, we humbly ask you to please donate.
                 </p><br>
                 <a href="#" class="button is-warning is-outlined is-large" style="float: right;">Donate Now</a>
-              </section><br><br>
+              </section>
+
               <!-- //FUNDING -->
 
-              <br><br>  
 
               <!-- PATRONS -->
-              <section>
+              <section class="patrons">
                 <h2 class="title is-1">
                   Patrons
-                </h2><br>
+                </h2>
 
                 <!-- COMPANY PATRONS -->
-                <div>
+                <div class="patron-box">
                   <h2 class="subtitle">
                     Companies
                   </h2>
@@ -243,10 +248,8 @@
                 </div>
                 <!-- //COMPANY PATRONS -->
 
-                <hr>
-
                 <!-- PRIVATE PATRONS -->
-                <div>
+                <div class="patron-box">
                   <h2 class="subtitle">
                     Private Funding Contributors
                   </h2>
@@ -281,7 +284,7 @@
                   </div>
                   <!-- //SPONSOR ROW 3 -->
 
-                   <!-- SPONSOR ROW 3 -->
+                   <!-- SPONSOR ROW 4 -->
                   <div class="level is-vcentered names">
                     <div class="level-item">
                       <p>
@@ -303,20 +306,24 @@
                         Roy Blankman 
                       </p>
                     </div>
+                  </div>
+                  <!-- //SPONSOR ROW 4 -->
+
+                  <!-- SPONSOR ROW 4 -->
+                  <div class="level is-vcentered names">
                     <div class="level-item">
                       <p>
                         Niels de Ruiter 
                       </p>
                     </div>
                   </div>
-                  <!-- //SPONSOR ROW 3 -->
+                  <!-- //SPONSOR ROW 4 -->
                 </div>
                 <!-- //PRIVATE PATRONS -->
 
-                <hr>
 
                 <!-- ANON PATRONS -->
-                <div>
+                <div class="patron-box">
                   <h2 class="subtitle">
                     Anonymous Funding Contributors
                   </h2>
