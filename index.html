@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Poppins" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -23,6 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
     <!-- Bulma Swatch Cyborg retheme -->
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/cyborg/bulmaswatch.min.css">
+    <!-- CSS Adjustments -->
+    <link rel="stylesheet" type="text/css" href="css/edits.css">
 
     <!-- Minimal + Delight style -->
     <link rel="stylesheet" type="text/css" href="css/delight.css">
@@ -37,7 +40,7 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="../">
-                          <img src="media/grin_mw_logo.svg" alt="Logo">
+                          <!-- <img src="media/grin_mw_logo.svg" alt="Logo"> -->
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -134,10 +137,10 @@
                 
                 <!-- DOT -->
                 <div class="column">
-                  <p class="subtitle">
+                  <h2 class="subtitle">
                     <img src="media/privacy.svg">
                     Private
-                  </p>
+                  </h2>
                   <span>
                     Grin has no amounts and no addresses. Transactions are additionally obscured. To hide where a newly created transaction comes from, it gets relayed privately (a "random walk") among peers before it is publicly announced.
                   </span>
@@ -146,10 +149,10 @@
 
                 <!-- DOT -->
                 <div class="column">
-                  <p class="subtitle">
+                  <h2 class="subtitle">
                     <img src="media/scale.svg">
                     Scalable
-                  </p>
+                  </h2>
                   <span>
                     MimbleWimble leverages cryptography to allow most of the blockchain data to be removed. In particular, nearly all past transaction data is pruned.
                   </span>
@@ -158,10 +161,10 @@
 
                 <!-- DOT -->
                 <div class="column">
-                  <p class="subtitle">
+                  <h2 class="subtitle">
                     <img src="media/nodes.svg">
                     Open
-                  </p>
+                  </h2>
                   <span>
                     Grin is developed openly, by open source developers based in different countries. It's not controlled by any company, foundation or individual. The coin distribution is designed to be as fair (but not gratis) as is known to be possible.
                   </span>
@@ -174,24 +177,30 @@
 
               <!-- FUNDING -->
               <section>
-                <h2 class="title is-1">
+                <h1 class="title is-1">
                   Funding
-                </h2><br>
+                </h1>
                 <p class="subtitle is-4">
                   Grin is launched fairly, free of ICO, pre-mine or founder’s reward. We rely on donations to keep working on the project. Support the movement by purchasing some swag or making a donation.
                 </p><br>
                 <a href="#" class="button is-warning is-large" style="float: right;">Donate Now</a>
-                <a href="#" class="button is-info is-outlined is-large"><img src="media/hat.png" style="height: 6rem;">Buy Swag</a>
+                <a href="#" class="button is-info is-outlined is-large"><img src="media/hat.png" style="height: 8rem;">Buy Swag</a>
               </section><br><br>
               <!-- //FUNDING -->
 
               <br><br>  
 
               <!-- PATRONS -->
-              <section>
-                <h2 class="title is-1">
+              <section class="patron">
+                <h1 class="title">
                   Patrons
-                </h2><br>
+                </h1>
+
+                <p>
+                  If you’re an individual, company or institution excited about the potential of Grin or MimbleWimble, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a <a href="http://grin-tech.org/funding.html">100% community-driven funding model</a>.
+                </p>
+
+                <br><br>
 
                 <!-- COMPANY PATRONS -->
                 <div>
@@ -224,6 +233,7 @@
                   </div>
                   <!-- //SPONSOR ROW 1 -->
 
+
                   <!-- SPONSOR ROW 2 -->
                   <div class="level is-vcentered">
                     <div class="level-item">
@@ -246,11 +256,11 @@
                 </div>
                 <!-- //COMPANY PATRONS -->
 
-                <hr>
+
 
                 <!-- PRIVATE PATRONS -->
                 <div>
-                  <h2 class="subtitle">
+                  <h2 class="subtitle has-top-space">
                     Private Funding Contributors
                   </h2>
 
@@ -316,11 +326,9 @@
                 </div>
                 <!-- //PRIVATE PATRONS -->
 
-                <hr>
-
                 <!-- ANON PATRONS -->
                 <div>
-                  <h2 class="subtitle">
+                  <h2 class="subtitle has-top-space">
                     Anonymous Funding Contributors
                   </h2>
                   <p>
@@ -338,7 +346,68 @@
     </section>
     <!-- //BODY -->
 
-    <footer class="footer is-vcentered has-text-centered hero-bkg-animated">
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+
+
+          <!-- COLUMN -->
+          <div class="column is-3 is-offset-1">
+            <img src="media/grin_mw_logo.svg" style="height: 8rem;">
+            <ul>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/releases"><i class="fab fa-github"></i>Github</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //COLUMN -->
+
+          <!-- COLUMN -->
+          <div class="column is-4 has-text-centered">
+            <h1 class="title">The Rabbit Hole</h1>
+            <ul>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
+              </li>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Mimwim Chain Format</a>
+              </li>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/rangeproofs.md">Range Proofs</a>
+              </li>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo Cycle PoW</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //COLUMN -->
+
+          <!-- COLUMN -->
+          <div class="column is-3 has-text-right">
+            <h1 class="title">Get Involved</h1>
+            <ul>
+              <li>
+                <a href="https://gitter.im/grin_community/Lobby"><i class="fab fa-gitter"></i>Gitter</a>
+              </li>
+              <li>
+                <a href="https://www.grin-forum.org/"><i class="fab fa-discourse"></i>Forum</a>
+              </li>
+              <li>
+                <a href="https://launchpad.net/~mimblewimble"><i class="fas fa-mail-bulk"></i>Mailing List</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //COLUMN -->
+
+
+
+
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- <footer class="footer is-vcentered has-text-centered hero-bkg-animated">
       <ul>
         <li>
           <a href="#">Twitter</a>
@@ -353,7 +422,7 @@
       <span>
         © Grin 2018
       </span>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

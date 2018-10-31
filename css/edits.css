@@ -1,0 +1,89 @@
+        html,
+
+        img {
+            padding: 5px;
+            }
+
+        .navbar-item img {
+          max-height: 4rem;
+          height: 4rem;
+        }        
+
+        /*setting the size of the description icons under the hero*/
+        .dots .column img {
+            margin-top: -10px;
+            height: 5rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /*fixing margins*/
+        .content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
+          margin-bottom: .1em;
+        }
+
+        /*size of logo image for patron companies*/
+        .level .level-item img {
+          height: 2.5rem;
+          margin: .2rem;
+        }
+
+        /*size of private funding contributors names*/
+        .names .level-item {
+          font-size: 1.5rem;
+        }
+
+        /*font-size of title & margin*/
+        .content section .title {
+            font-size: 4.3rem;
+            margin-bottom: 5rem;
+            margin-top: 3rem;
+        }
+
+        /*font-size of subtitle*/
+        .subtitle {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /*font-size of subtitle*/
+        .content section .subtitle {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /*font-size of p*/
+        p {
+            font-size: 1.5rem;
+        }
+
+        /*font-size of span*/
+        span {
+            font-size: 1.5rem;
+        }
+
+        section .patron .subtitle {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #ffdd57;
+        }
+
+        /*a consistent top margin, used for seperating the patron subcategories*/
+        .has-top-space {
+            margin-top: 5rem;
+        }
+
+        /*font-size of footer list*/
+        ul li a {
+            font-size: 1.5rem;
+        }
+
+        /*padding the icons in the footer lists*/
+        ul li a i {
+            padding: .5rem;
+        }
+
+
+
+
+
