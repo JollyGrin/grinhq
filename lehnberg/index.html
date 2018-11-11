@@ -17,11 +17,11 @@
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Poppins" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVY../jsN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bulma Version 0.7.2-->
-    <link rel="stylesheet" href="https://cdn../js.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
     <!-- Bulma Swatch Cyborg retheme -->
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/cyborg/bulmaswatch.min.css">
     <!-- CSS Adjustments -->
@@ -36,34 +36,109 @@
     <!-- HERO -->
     <section class="hero hero-bkg-animated is-fullheight is-default is-bold">
         <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="../">
-                          <!-- <img src="../media/grin_mw_logo.svg" alt="Logo"> -->
-                        </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <div class="tabs is-right">
-                                <ul>
-                                    <!-- <li class="is-active"><a>Home</a></li> -->
-                                    <li><a href="https://github.com/mimblewimble/grin/releases">Github</a></li>
-                                    <li><a href="https://www.grin-forum.org/">Forum</a></li>
-                                    <li><a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Learn</a></li>
-                                    <li><a href="https://github.com/mimblewimble/grin/blob/master/doc/build.md">Build</a></li>
-                                    <li><a href="https://gitter.im/grin_community/Lobby">Chat</a></li>
-                                </ul>
+
+          <nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
+              <div class="container">
+                  <div class="navbar-brand">
+                      <a class="navbar-item" href="../">
+                        <img id="Logo" class="largeLogo" src="../media/grin_mw_logo.svg" alt="Logo">
+                      </a>
+                      <span class="navbar-burger burger" data-target="navbarMenu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      </span>
+                  </div>
+                  <div id="navbarMenu" class="navbar-menu">
+                      <div class="navbar-end">
+
+                          <!-- navbar item -->
+                          <div class="navbar-item">
+                            <a href="https://github.com/mimblewimble/grin/releases" class="navbar-item">
+                              Github
+                            </a>
+                          </div>
+                          <!-- //navbar item -->
+
+                          <!-- navbar item -->
+                          <div class="navbar-item">
+                            <a href="https://www.grin-forum.org/" class="navbar-item">
+                              Forum
+                            </a>
+                          </div>
+                          <!-- //navbar item -->
+
+                          <!-- navbar item -->
+                          <div class="navbar-item">
+                            <a href="https://gitter.im/grin_community/Lobby" class="navbar-item">
+                              Chat
+                            </a>
+                          </div>
+                          <!-- //navbar item -->
+
+                          <!-- dropdown -->
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Build
+                            </a>
+
+                            <div class="navbar-dropdown">
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md" class="navbar-item">
+                                Build Steps
+                              </a>
+                              <a href="https://github.com/mimblewimble/docs/wiki/How-to-use-grin" class="navbar-item">
+                                Using Grin
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin-miner" class="navbar-item">
+                                Grin Miner
+                              </a>
+                              <hr class="navbar-divider">
+                              <div class="navbar-item">
+                                <span class="tag is-warning">
+                                  Live: Testnet 4
+                                </span> 
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                          </div>
+                          <!-- //dropdown -->
+
+                          <!-- dropdown -->
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Learn
+                            </a>
+
+                            <div class="navbar-dropdown">
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md" class="navbar-item">
+                                Grin for Bitcoiners
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md" class="navbar-item">
+                                MimWim Chain Format
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/rangeproofs.md" class="navbar-item">
+                                Range Proofs
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md" class="navbar-item">
+                                Cuckoo Cycle PoW
+                              </a>
+                              <!-- <hr class="navbar-divider">
+                              <div class="navbar-item">
+                                Version 0.7.2
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+
+                      </div>
+                  </div>
+              </div>
+          </nav>
+
+
+
+
+
+
         </div>
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -206,7 +281,9 @@
                   </div>
                   <div class="tile is-parent">
                     <div class="tile is-child box">
-                      <p class="subtitle">Crowdfunding the Security Audit</p> <hr>
+                      <p class="subtitle">
+                        <a href="securityaudit.html">Crowdfunding the Security Audit</a>
+                      </p> <hr>
                       <p>
                         TL;DR Grin is nearing its final phases of development before the release of its cryptocurrency network (mainnet).
                       </p>
@@ -215,8 +292,8 @@
                         To do so safely, the Grin codebase needs to undergo a security audit. We’re soliciting donations:
                         <br><br>
                         <ul>
-                          <li>bitcoin legacy <a href="https://live.blockcypher.com/btc/address/3ChVP627KU5w4zu2rieFPF3wGXWQgmhvrs/">3ChVP627KU5w4zu2rieFPF3wGXWQgmhvrs</a></li>
-                          <li>bitcoin segwit <a href="https://blockchair.com/bitcoin/address/bc1qdgs8vkpzr256qjlzlfht72z3mhcrdrt6wj2rfjw39j8us24gz8uq78qj65">bc1qdgs8vkpzr256qjlzlfht72z3mhcrdrt6wj2rfjw39j8us24gz8uq78qj65</a></li>
+                          <li>bitcoin legacy <a href="https://live.blockcypher.com/btc/address/3ChVP627KU5w4zu2rieFPF3wGXWQgmhvrs/">3ChVP627KU5<br>w4zu2rieFPF3wGXWQgmhvrs</a></li>
+                          <li>bitcoin segwit <a href="https://blockchair.com/bitcoin/address/bc1qdgs8vkpzr256qjlzlfht72z3mhcrdrt6wj2rfjw39j8us24gz8uq78qj65">bc1qdgs8vkpzr256qjlzlfht7<br>2z3mhcrdrt6wj2rfjw39j8us24gz8uq78qj65</a></li>
                         </ul>
                       </p>
                       <br><br>
@@ -262,7 +339,7 @@
                 </h1>
 
                 <p>
-                  If you’re an individual, company or institution excited about the potential of Grin or MimbleWimble, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a <a href="http://grin-tech.org/funding.html">100% community-driven funding model</a>.
+                  If you’re an individual, company or institution excited about the potential of Grin or MimbleWimble, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a <a href="funding.html">100% community-driven funding model</a>.
                 </p>
 
                 <br><br>
@@ -476,7 +553,7 @@
         </div>
       </div>
     </footer>
-
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/bulma.js"></script>
 </body>
-
 </html>
