@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- The text in the tab -->
+    <title>Grin MW</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Poppins" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bulma Version 0.7.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <!-- Bulma Swatch Cyborg retheme -->
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/cyborg/bulmaswatch.min.css">
+    <!-- CSS Adjustments -->
+    <link rel="stylesheet" type="text/css" href="css/edits.css">
+
+    <!-- Minimal + Delight style -->
+    <link rel="stylesheet" type="text/css" href="css/delight.css">
+</head>
+
+<body>
+    
+    <!-- HERO -->
+    <section class="hero hero-bkg-animated is-medium is-default is-bold">
+        <div class="hero-head">
+
+          <nav class="navbar is-top" role="navigation" aria-label="dropdown navigation">
+              <div class="container">
+                  <div class="navbar-brand">
+                      <a class="navbar-item" href="index.html">
+                        <img src="media/grin_mw_logo.svg" alt="Logo">
+                      </a>
+                      <span class="navbar-burger burger" data-target="navbarMenu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      </span>
+                  </div>
+                  <div id="navbarMenu" class="navbar-menu">
+                      <div class="navbar-end">
+
+                          <!-- navbar item -->
+                          <div class="navbar-item">
+                            <a href="https://github.com/mimblewimble/grin/releases" class="navbar-item">
+                              Github
+                            </a>
+                          </div>
+                          <!-- //navbar item -->
+
+                          <!-- navbar item -->
+                          <div class="navbar-item">
+                            <a href="https://www.grin-forum.org/" class="navbar-item">
+                              Forum
+                            </a>
+                          </div>
+                          <!-- //navbar item -->
+
+                          <!-- navbar item -->
+                          <div class="navbar-item">
+                            <a href="https://gitter.im/grin_community/Lobby" class="navbar-item">
+                              Chat
+                            </a>
+                          </div>
+                          <!-- //navbar item -->
+
+                          <!-- dropdown -->
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Build
+                            </a>
+
+                            <div class="navbar-dropdown">
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md" class="navbar-item">
+                                Build Steps
+                              </a>
+                              <a href="https://github.com/mimblewimble/docs/wiki/How-to-use-grin" class="navbar-item">
+                                Using Grin
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin-miner" class="navbar-item">
+                                Grin Miner
+                              </a>
+                              <hr class="navbar-divider">
+                              <div class="navbar-item">
+                                <span class="tag is-warning">
+                                  Live: Testnet 4
+                                </span> 
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+
+                          <!-- dropdown -->
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Learn
+                            </a>
+
+                            <div class="navbar-dropdown">
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md" class="navbar-item">
+                                Grin for Bitcoiners
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md" class="navbar-item">
+                                MimWim Chain Format
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/rangeproofs.md" class="navbar-item">
+                                Range Proofs
+                              </a>
+                              <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md" class="navbar-item">
+                                Cuckoo Cycle PoW
+                              </a>
+                              <!-- <hr class="navbar-divider">
+                              <div class="navbar-item">
+                                Version 0.7.2
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+
+                      </div>
+                  </div>
+              </div>
+          </nav>
+
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <div>
+                  <h1 class="title is-1 page-title">
+                    Security Audit
+                  </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //HERO -->
+
+    <!-- BODY -->
+    <section>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-10 is-offset-1">
+            
+
+            <div class="content box page">
+              
+              <p class="has-text-right">
+                37.6% Funded
+              </p>
+
+              <progress class="progress is-large is-success" value=".376875" max="1">37</progress>
+
+              <h2>TL;DR</h2>
+              <p>Grin is nearing its final phases of development before the release of
+              its cryptocurrency network (mainnet). To do so safely, the Grin codebase needs
+              to undergo a security audit.
+              </p>
+
+              <p>
+                We’re soliciting donations:
+              </p>
+
+              <ul>
+                <li>bitcoin legacy <a href="https://live.blockcypher.com/btc/address/3ChVP627KU5w4zu2rieFPF3wGXWQgmhvrs/">3ChVP627KU5<br>w4zu2rieFPF3wGXWQgmhvrs</a></li>
+                <li>bitcoin segwit <a href="https://blockchair.com/bitcoin/address/bc1qdgs8vkpzr256qjlzlfht72z3mhcrdrt6wj2rfjw39j8us24gz8uq78qj65">bc1qdgs8vkpzr256qjlzlfht7<br>2z3mhcrdrt6wj2rfjw39j8us24gz8uq78qj65</a></li>
+              </ul>
+
+              <br>
+
+              <p>Status: Open</p>
+
+              <p>Goal: 16 BTC</p>
+
+              <p>Raised: 6.03 BTC</p>
+
+              <h2 id="who">Who?</h2>
+
+              <ul>
+                <li>You, the investor who plans to acquire grins, and believes in its value
+              proposition of privacy and scalability.</li>
+                <li>You, the miner or mining industry participant, who plans on participating in
+              the mining of the Grin chain.</li>
+                <li>You, the cypherpunk or otherwise bitcoin, ethereum, monero or zcash adopter,
+              who believes Grin makes an important contribution in furthering some of those
+              early cryptocurrency ideals.</li>
+                <li>You, the technology enthusiast, who sees something in Grin that has never
+              been tried before and is new an exciting.</li>
+                <li>You, who’s not in any of the above categories, but believes that the current
+              financial system status quo could use a good kick in the pants.</li>
+              </ul>
+
+              <p>On our end, the Grin Council (which handles all governance oversight) nominated
+              5 secretaries. Those 5 individuals generated a 3-of-5 bitcoin segwit multisig
+              address under supervision of the council, to guarantee funds’ safety. Note that
+              everyone in both the council and the secretary group are fully independent
+              individuals, working in entirely different capacity in different parts of the
+              world.</p>
+
+              <h2 id="why">Why?</h2>
+
+              <p>When Grin launches, it will likely be used to secure the equivalent of
+              millions of dollars (or euros, yuans, yens, pesos, etc) on its chain within
+              a few days or weeks. While the Grin development team has done everything it
+              can to identify and fix possible major security failures, Grin is still a very
+              young and unproven codebase.</p>
+
+              <p>To reduce risks and follow standard industry practices (at least in the
+              security industry), the Grin team is requesting a general code audit by a
+              professional firm. The cost of the audit is estimated to be around $100,000.</p>
+
+              <h2 id="how">How?</h2>
+
+              <p>Multiple firms have already been contacted and we will be undergoing a process
+              of selection in the next few weeks. Once a firm is retained, we will strive to
+              pay it directly from the fund (most firms accept bitcoin). Any excess will be
+              used for the general maintenance of the Grin project.</p>
+
+              <p>We expect the audit to last one to two months, during which every new Grin
+              development will undergo extreme scrutiny. Once the audit is finished and all
+              discovered issues are either fixed or found to be minor, we will be ready to
+              launch Grin’s main network.</p>
+
+              <p>More generally, the guidelines in the Grin <a href="https://github.com/mimblewimble/grin/blob/master/SECURITY.md">security policy</a>
+              apply.</p>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //BODY -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+
+
+          <!-- COLUMN -->
+          <div class="column is-3 is-offset-1">
+            <img class="footer-logo" src="media/grin_mw_logo.svg">
+            <ul>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/releases"><i class="fab fa-github"></i>Github</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //COLUMN -->
+
+          <!-- COLUMN -->
+          <div class="column is-4 has-text-centered">
+            <h1 class="title">The Rabbit Hole</h1>
+            <ul>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
+              </li>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Mimwim Chain Format</a>
+              </li>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/rangeproofs.md">Range Proofs</a>
+              </li>
+              <li>
+                <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo Cycle PoW</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //COLUMN -->
+
+          <!-- COLUMN -->
+          <div class="column is-3 has-text-right">
+            <h1 class="title">Get Involved</h1>
+            <ul>
+              <li>
+                <a href="https://gitter.im/grin_community/Lobby"><i class="fab fa-gitter"></i>Gitter</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/grinmw"><i class="fab fa-twitter"></i>Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.grin-forum.org/"><i class="fab fa-discourse"></i>Forum</a>
+              </li>
+              <li>
+                <a href="https://launchpad.net/~mimblewimble"><i class="fas fa-mail-bulk"></i>Mailing List</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //COLUMN -->
+
+
+
+
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="text/javascript" src="js/nav.js"></script> -->
+    <script type="text/javascript" src="js/bulma.js"></script>
+</body>
+</html>
