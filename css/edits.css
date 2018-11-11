@@ -40,6 +40,14 @@
             margin-top: 3rem;
         }
 
+        /*font-size of Community Initiatives*/
+        section .content  .title {
+            font-size: 4.3rem;
+            margin-bottom: 5rem;
+            margin-top: 3rem;
+        }
+
+
         /*font-size of subtitle*/
         .subtitle {
             font-size: 2.5rem;
@@ -65,7 +73,7 @@
         section .patron .subtitle {
             text-decoration-line: underline;
             text-decoration-style: wavy;
-            text-decoration-color: #ffdd57;
+            text-decoration-color: #242424;
         }
 
         /*a consistent top margin, used for seperating the patron subcategories*/
@@ -74,14 +82,31 @@
         }
 
         /*font-size of footer list*/
-        ul li a {
+        footer ul li a {
             font-size: 1.5rem;
         }
 
         /*padding the icons in the footer lists*/
-        ul li a i {
+        footer ul li a i {
             padding: .5rem;
         }
+
+        /*Footer Grin-Logo Adjustments*/
+        .footer-logo {
+            margin-top: -1rem;
+            height: 8rem;
+        }
+
+        nav {
+            margin-top: 4vh;
+        }
+
+        }
+        #Logo{
+          transition: all 0.8s;
+        }
+        .largeLogo{opacity: 0.0;}
+        .smallLogo{opacity: 1;}
 
 
 
