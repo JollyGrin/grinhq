@@ -1,0 +1,24 @@
+html {
+	color: black;
+	background-color: white;
+}
+
+body {
+    font-family: 'Anonymous Pro';
+    }
+
+.title {
+    font-family: 'Poppins';
+}
+
+section .patron .subtitle {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #ffdd578c;
+        }
+
+.companies img {
+	/*background-color: #ffdd578c;*/
+	filter: invert(100%);
+}
+
